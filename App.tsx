@@ -1,19 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React, {useState} from 'react';
 import {StatusBar, Text, View, StyleSheet, ScrollView} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 
 function App(): React.JSX.Element {
   const [uniqueId, setUniqueId] = useState<string>();
-  /**
-   * 获取设备信息
-   */
+
   DeviceInfo.getUniqueId().then(value => {
     setUniqueId(value);
   });
