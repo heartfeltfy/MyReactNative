@@ -12,7 +12,7 @@ function App(): React.JSX.Element {
     <ScrollView style={styles.container} keyboardDismissMode="on-drag">
       <StatusBar hidden />
       <View>
-        <Text style={styles.text}>设备唯一标识符</Text>
+        <Text style={styles.text}>设备唯一标识符：</Text>
         <Text style={styles.text}>{uniqueId}</Text>
       </View>
     </ScrollView>
